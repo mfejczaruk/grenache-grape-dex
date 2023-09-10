@@ -43,7 +43,7 @@ node send-order.js side price quantity user
 eg:
 ```
 node send-order.js buy 26005 10 Marc
-node send-order.js buy 25030 5 Matt
+node send-order.js sell 25030 5 Matt
 ```
 
 ### known issues
