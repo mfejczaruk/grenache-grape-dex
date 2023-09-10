@@ -18,7 +18,7 @@ peer.init()
 
 function displayOrders(orders, orderType) {
     orders.forEach(order => {
-        console.log(`[${orderType}]Price: ${order.price}, Quantity: ${order.quantity}, User: ${order.user}`);
+        console.log(`[${orderType}]Price: $${order.price}, Quantity: ${order.quantity}, User: ${order.user}`);
     });
 }
 
@@ -36,12 +36,14 @@ setInterval(() => {
             console.error(err)
         }
         console.clear();
+        console.log('Orderbook:')
         const retrievedOrderbook = Orderbook.deserialize(data);
         displayOrders(retrievedOrderbook.sellOrders.reverse(), 'Sell');
         if (retrievedOrderbook.buyOrders.length > 0 && retrievedOrderbook.sellOrders.length > 0) {
             console.log(`SPREAD: $${retrievedOrderbook.sellOrders.reverse()[0].price - retrievedOrderbook.buyOrders[0].price}`);
         }
         displayOrders(retrievedOrderbook.buyOrders, 'Buy');
+        console.log('=====')
         console.log('Latest trades:');
         displayTrades(retrievedOrderbook.trades);
     })

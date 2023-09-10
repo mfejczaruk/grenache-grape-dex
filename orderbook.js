@@ -74,7 +74,7 @@ class Orderbook {
               const matchedQuantity = Math.min(bestBuyOrder.quantity, bestSellOrder.quantity);
 
               this.trades.push(new Trade(matchedQuantity, bestBuyOrder.price));
-              console.log(`[TRADE] Price: ${bestBuyOrder.price} Quantity: ${matchedQuantity}`);
+              console.log(`[TRADE] Price: $${bestBuyOrder.price} Quantity: ${matchedQuantity}`);
 
               bestBuyOrder.quantity -= matchedQuantity;
               bestSellOrder.quantity -= matchedQuantity;
