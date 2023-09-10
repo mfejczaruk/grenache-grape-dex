@@ -17,11 +17,11 @@ node orderbook.test.js
 ```
 ## Components
 ### send-order.js
-Is used to send orders to DEX
+sends order to orderbook
 ### show-orderbook.js
 shows orderbook and most recent trades
 ### start-worker.js
-Starts DEX worker
+starts DEX worker
 
 ## Usage
 ### start grenache network
