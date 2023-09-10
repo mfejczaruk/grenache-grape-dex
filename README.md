@@ -53,3 +53,8 @@ Error: ERR_REQUEST_GENERIC: connect ECONNREFUSED 127.0.0.1:1237
 ```
 
 Didn't have enough time to debug it
+
+### Things to improve:
+1. Add typescript support
+2. Add "live" support for checking trades instead of pulling the data
+3. Write more tests, also e2e/integration
