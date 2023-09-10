@@ -60,3 +60,4 @@ Didn't have enough time to debug it
 2. Add "live" support for checking trades instead of pulling the data
 3. Write more tests, also e2e/integration
 4. Make Orderbook more "distribiuted" - eg store only users orderbook instead of syncing
+5. Better error handling - eg for issue mentioned above, add retry logic
