@@ -5,7 +5,7 @@ tested on node v18.17.1
 
 ## Installation 
 ```
-https://github.com/mfejczaruk/grenache-grape-dex && cd grenache-grape-dex
+git clone https://github.com/mfejczaruk/grenache-grape-dex && cd grenache-grape-dex
 npm i -g grenache-grape
 npm i
 ```
