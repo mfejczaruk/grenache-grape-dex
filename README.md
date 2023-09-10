@@ -1,4 +1,5 @@
 # DEX Assignment
+<img width="616" alt="image" src="https://github.com/mfejczaruk/grenache-grape-dex/assets/6344380/10a56b7e-b6f1-4952-b9e3-a5dc7c66e69b">
 
 ## Requirements
 tested on node v18.17.1
@@ -43,7 +44,7 @@ node send-order.js side price quantity user
 eg:
 ```
 node send-order.js buy 26005 10 Marc
-node send-order.js buy 25030 5 Matt
+node send-order.js sell 25030 5 Matt
 ```
 
 ### known issues
@@ -53,3 +54,8 @@ Error: ERR_REQUEST_GENERIC: connect ECONNREFUSED 127.0.0.1:1237
 ```
 
 Didn't have enough time to debug it
+
+### Things to improve:
+1. Add typescript support
+2. Add "live" support for checking trades instead of pulling the data
+3. Write more tests, also e2e/integration
