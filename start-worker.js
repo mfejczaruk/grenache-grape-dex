@@ -34,7 +34,7 @@ service.on('request', (rid, key, payload, handler) => {
         const order = Order.deserialize(payload);
         dexOrderbook.addOrder(order);
         dexOrderbook.matchOrders();
-        console.log(`Order with id ${order.id} received.`);
+        console.log(`Order with id '${order.id}' received.`);
         handler.reply(null, 'success');
     } else if (key === 'orderbook:sync') {
         handler.reply(null, dexOrderbook.serialize());
