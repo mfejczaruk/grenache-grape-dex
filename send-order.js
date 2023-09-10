@@ -29,6 +29,6 @@ peer.request('orderbook:send-order', order.serialize(), {
     if (err) {
         console.error(err)
     }
-    console.log(data)
+    console.log('Order sent.')
     process.exit(-1)
 })

@@ -37,6 +37,7 @@ setInterval(() => {
         }
         console.clear();
         console.log('Orderbook:')
+        console.log('=====');
         const retrievedOrderbook = Orderbook.deserialize(data);
         displayOrders(retrievedOrderbook.sellOrders.reverse(), 'Sell');
         if (retrievedOrderbook.buyOrders.length > 0 && retrievedOrderbook.sellOrders.length > 0) {

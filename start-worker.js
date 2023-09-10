@@ -26,6 +26,8 @@ const port = 1024 + Math.floor(Math.random() * 1000)
 const service = peer.transport('server')
 service.listen(port)
 
+console.log('Worker started')
+
 setInterval(function() {
     link.announce('orderbook:sync', service.port, {})
     link.announce('orderbook:send-order', service.port, {})
