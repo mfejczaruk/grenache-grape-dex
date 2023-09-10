@@ -1,4 +1,5 @@
 # DEX Assignment
+<img width="616" alt="image" src="https://github.com/mfejczaruk/grenache-grape-dex/assets/6344380/10a56b7e-b6f1-4952-b9e3-a5dc7c66e69b">
 
 ## Requirements
 tested on node v18.17.1
