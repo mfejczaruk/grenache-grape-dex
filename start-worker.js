@@ -2,13 +2,11 @@ const {
     PeerRPCServer
 } = require('grenache-nodejs-http')
 const Link = require('grenache-nodejs-link')
-
 const {
     Orderbook,
     Order
 } = require('./orderbook')
 const dexOrderbook = new Orderbook();
-
 
 const link = new Link({
     grape: 'http://127.0.0.1:30001'
