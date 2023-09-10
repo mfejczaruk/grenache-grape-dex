@@ -4,7 +4,6 @@ const {
 const Link = require('grenache-nodejs-link');
 const {
     Orderbook,
-    Order
 } = require('./orderbook');
 const link = new Link({
     grape: 'http://127.0.0.1:30001'
