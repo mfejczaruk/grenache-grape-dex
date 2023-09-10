@@ -1,5 +1,3 @@
-'use strict'
-
 const {
     PeerRPCServer
 } = require('grenache-nodejs-http')
